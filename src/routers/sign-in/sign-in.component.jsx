@@ -3,7 +3,6 @@ import { signInWithGooglePopup, getUserFromAuth } from "../../utils/firebase.uti
 const SignIn = () => {
   const signIn = async () => {
     const responese = await signInWithGooglePopup();
-    console.log(responese);
     const user = getUserFromAuth(responese);
     console.log(user);
   };
